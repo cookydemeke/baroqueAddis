@@ -1,0 +1,73 @@
+<div class="gallery">
+
+<%= image_tag("mood_board.PNG", :alt => "Access", :class => "linkimgs", :id => "ar") %>
+<div class="desc"> <%= link_to "Residential", vip_path %></div>
+
+</div>
+
+
+
+=========================================
+
+
+<!-- <div class="gallery">
+    <%= image_tag("confernceroom.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Conference Room</div>
+</div>
+
+<div class="gallery">
+    <%= image_tag("dining.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Dinning Area</div>
+</div>
+
+<div class="gallery">
+    <%= image_tag("Diplomatlounge.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Diplomat Lounge</div>
+</div>
+
+<div class="gallery">
+    <%= image_tag("DIPLOMATS_DINING_HALL.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Diplomats Dinning Hall</div>
+</div>
+
+<div class="gallery">
+    <%= image_tag("ELEVATOR.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Elevator</div>
+</div>
+
+<div class="gallery">
+    <%= image_tag("Landscape_01.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+    <div class="desc">Landscape</div>
+</div> -->
+
+<!-- ======= -->
+
+<div class="wrapper">
+  <div id="homeSlideshow">
+    <div id="slideshow">
+      <div>
+        <%= image_tag("confernceroom.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Conference Room</div>
+      </div>
+      <div>
+        <%= image_tag("dining.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Dinning Area</div>
+      </div>
+      <div>
+        <%= image_tag("Diplomatlounge.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Diplomat Lounge</div>
+      </div>
+      <div>
+        <%= image_tag("DIPLOMATS_DINING_HALL.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Diplomats Dinning Hall</div>
+      </div>
+      <div>
+        <%= image_tag("ELEVATOR.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Elevator</div>
+      </div>
+      <div>
+        <%= image_tag("Landscape_01.jpg", :alt => "VIP", :class => "linkimgs", :style => "width=300" "height=200") %>
+        <div class="desc">Landscape</div>
+      </div>
+    </div>
+</div>
