@@ -1,21 +1,37 @@
 
-<div class="wrapper">
-
-  <%= image_tag("ARRIVAL.jpg", :alt => "VIP", :class => "linkimgs") %>
-  <div class="desc"> <%= link_to "Ethiopian Airlines VIP Terminal", vip_path %></div>
-
-  <%= image_tag("DSC_0060.jpg", :alt => "Access", :class => "linkimgs") %>
-  <div class="desc"> <%= link_to "Access Real Estate", access_path %></div>
-
+<div class="port">
+  <p class="folders">VIP Terminal, Ethiopian Airlines</p>
+  <div class="overlay">
+    <div class="text"> <%= link_to image_tag("ARRIVAL.jpg", :alt => "VIP", :class => "linkimgs"), vip_path %></div>
+  </div>
 </div>
 
-<div class="wrapper">
 
-  <%= image_tag("LIVING_ROOM4.jpg", :alt => "Residential", :class => "linkimgs") %>
-  <div class="desc"> <%= link_to "Residential Home", residential_path %></div>
+<div class="port">
+  <p class="folders">Access Real Estate</p>
+  <div class="overlay">
+    <div class="text"> <%= link_to image_tag("DSC_0060.jpg", :alt => "Access", :class => "linkimgs"), access_path %></div>
+  </div>
+</div>
+
+<div class="port">
+  <p class="folders"> Capital Hotel</p>
+  <div class="overlay">
+    <div class="text"> <%= link_to image_tag("restorant_entrance.jpg", :alt => "Capital Hotel", :class => "linkimgs"), capital_path %></div>
+  </div>
+</div>
 
 
-  <%= image_tag("restorant_entrance.jpg", :alt => "Capital Hotel", :class => "linkimgs") %>
-  <div class="desc"> <%= link_to "Capital Hotel", capital_path %></div>
+<div class="port">
+  <p class="folders">Nexus International Hotel</p>
+  <div class="overlay">
+    <div class="text"> <%= link_to image_tag("NexusBldg.jpg", :alt => "Nexus", :class => "linkimgs"), nexus_path %></div>
+  </div>
+</div>
 
+<div class="port">
+  <p class="folders">Residential Home</p>
+  <div class="overlay">
+    <div class="text"> <%= link_to image_tag("LIVING_ROOM4.jpg", :alt => "Residential", :class => "linkimgs"), residential_path %></div>
+  </div>
 </div>

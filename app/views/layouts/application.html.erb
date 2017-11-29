@@ -3,24 +3,34 @@
   <head>
     <title>Baroque</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/Logo_copy.png" sizes="32x32">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/dropdown.js"></script>
+    <link type="text/css"src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    </style>
+  </head>
   </head>
 
-  <body style="background-color:#fffcfc">
+  <body style="background-color:#FBFAF4">
     <header>
       <!-- <div id="logo">Baroque</div> -->
-      <div id="logobox">
       <%= image_tag("Logo.png", :alt => "Logo", :class => "logo") %>
+
+      <hr>
 
       <div id="nav">
         <ul>
@@ -31,7 +41,6 @@
           <li><%= link_to "About", about_path %></li>
         </ul>
       </div>
-    </div>
 
 
     </header>
@@ -39,11 +48,13 @@
     <div id="yield" class="section" data-state="default">
       <%= yield %>
     </div>
-    <!-- <footer>
-      <p>Copyright &copy; 2013 - 2017. Baroqueinethiopia.com. All Rights Reserved. </p>
+
+    <footer>
+      <hr>
+      <p>&copy; 2013 - 2017. Baroqueinethiopia.com. All Rights Reserved. </p>
       <a href="https://www.facebook.com/baroque.inethiopia?fref=ts" class="fa fa-facebook"></a>
-      <a href="https://www.linkedin.com/in/salome-dagnachew-a1172235/" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
-    </footer> -->
+      <!-- <a href="https://www.linkedin.com/in/salome-dagnachew-a1172235/" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-instagram"></a> -->
+    </footer>
   </body>
 </html>

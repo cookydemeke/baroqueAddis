@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get "/vip" => "users#vip"
   get "/residential" => "users#residential"
   get "/capital" => "users#capital"
+  get "/nexus" => "users#nexus"
 
 end

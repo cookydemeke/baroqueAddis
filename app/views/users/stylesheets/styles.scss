@@ -1,0 +1,245 @@
+h1{
+  color: #A03539;
+  text-align: center;
+}
+h2 {
+  color: #4C5C35;
+}
+
+/* Style navigation bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  // border: 5px solid #E8BA47;
+  background-color: #E8BA47;
+  margin-left: 80px;
+  margin-right: 80px;
+  color: white;
+}
+li {
+  font-size: 20px;
+  font-family: 'Abril Fatface', cursive;
+  display: inline-block;
+  color: #A03539;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li :hover {
+  width: 100px;
+  // border: 2px solid #E8BA47;
+  border-radius: 50%;
+  // background-color: #E8BA47;
+  opacity: 0.5;
+  font-size: 25px;
+
+}
+.links {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  background-color: #A03539;
+}
+// #logobox {
+//   border: 5px solid #E8BA47;
+//   margin-left: 80px;
+//   margin-right: 80px;
+// }
+.logo {
+  margin-left: 300px;
+
+}
+.wrapper {
+  margin-left: 30px;
+  margin-right: 80px;
+  display: flex;
+  margin-top: 2px;
+  align-items: center;
+  align-content: space-around;
+}
+footer {
+  height: 300px;
+  width: 100%;
+  // margin-left: -10px;
+  // padding: 5px;
+  // text-align: center;
+  // font-size: 10px;
+  // background-color: #A03539;
+  clear: both;
+  position: absolute;
+  bottom: -700px;
+  border: 5px solid #E8BA47;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  // margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: -1100px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* === home page === */
+
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  background-color: white;
+}
+#slideshow > div {
+  position: absolute;
+  top: -40px;
+  left: -240px;
+  // right: 10px;
+  bottom: 10px;
+}
+#homeMenu, #homeSlideshow {
+  width: 50%;
+}
+.slideimgs {
+  height: 600px;
+  width: 1300px;
+}
+#whatwedo {
+  margin-left: 80px;
+}
+.qod-author {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 20px;
+  color: #A03539;
+}
+
+/* === about page === */
+
+.abtsaltxt{
+  margin-left: 20px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#circle-shape-example {
+  font-family: Open Sans, sans-serif;
+  margin: 2rem;
+}
+#circle-shape-example p {
+  line-height: 1.8;
+}
+#circle-shape-example .curve {
+  width: 25%; height: auto;
+  min-width: 100px;
+  float: left;
+  margin-right:2rem;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+/* === portfolio  === */
+
+// #wrapper {
+//   width: 1000px;
+//   margin-left: 200px;
+//   margin-right: 80px;
+//   display: inline-block;
+//   margin-top: 2px;
+//   padding: 10px;
+//   align-items: center;
+//   align-content: space-around;
+// }
+
+.linkimgs, .comimgs {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+    display: inline-block;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery image_tag {
+    width: 100%;
+    height: auto;
+}
+
+// div.desc {
+//     padding: 15px;
+//     text-align: center;
+//     bottom: 0;
+// }
+/* === About === */
+
+.wp-caption {
+  margin: 5px;
+  padding: 5px;
+  border: solid 1px #E5E5FF;
+  background: #E5F2FF;
+  font-size:90%;
+  color: black }
+
+/* === services === */
+
+#serv_wrapper {
+  margin-left: 100px;
+  margin-right: 80px;
+  display: flex;
+  margin-top: 2px;
+  padding: 10px;
+  align-items: center;
+  align-content: space-around;
+}
+.leftcolumn, .rightcolumn {
+  margin-left: 10px;
+  width: 800px;
+  display: inline-block;
+}
+.rightcolumn {
+  margin-top: 50px;
+}
+#location {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 70px;
+  height: 300px;
+  background-color: #4C5C35;
+  color: white;
+  display: flex;
+}
+#contact {
+  margin-left: 50px;
+}
+iframe {
+  margin-top: 30px;
+  margin-left: 300px;
+}

@@ -1,119 +1,121 @@
-h1{
-  text-align: center;
+body {
+  width: 100%;
+  height: 100%;
 }
-/* Style navigation bar */
+h1{
+  color: #A03539;
+  text-align: center;
+  margin-top: 200px;
+}
+h2, h3 {
+  color: #4C5C35;
+}
+hr {
+  border-color: #A03539;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+/*==================================== navigation bar/footer =================== */
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   text-align: center;
-  // border: 5px solid #E8BA47;
-
+  // background-color: #EABC46;
+  margin-left: 700px;
+  margin-right: 150px;
+  color: white;
 }
 li {
   font-size: 20px;
   font-family: 'Abril Fatface', cursive;
   display: inline-block;
-  color: #A03539;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
+li > a {
+  color: #4C5C35;
+}
 li :hover {
   width: 100px;
-  // border: 2px solid #E8BA47;
   border-radius: 50%;
-  background-color: #E8BA47;
-  opacity: 0.5;
-
+  color: #A03539;
 }
 .links {
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   background-color: #A03539;
 }
-#logobox {
-  border: 5px solid #E8BA47;
-  margin-left: 80px;
-  margin-right: 80px;
-
-}
 .logo {
-  margin-left: 300px;
-
+  margin-left: 200px;
+  width: 500px;
 }
 .wrapper {
-  // margin-left: 80px;
-  // margin-right: 80px;
+  margin-left: 50px;
+  margin-right: 100px;
   display: flex;
   margin-top: 2px;
   align-items: center;
   align-content: space-around;
+  padding: 5px;
 }
 footer {
-  height: 300px;
-  width: 100%;
-  // margin-left: -10px;
-  // padding: 5px;
-  // text-align: center;
-  // font-size: 10px;
-  // background-color: #A03539;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  // background-color: #EABC46;
+  margin-left: 150px;
+  margin-right: 200px;
+  color: #4C5C35;
+  width: 80%;
   clear: both;
   position: absolute;
-  bottom: -700px;
-  border: 5px solid #E8BA47;
+  bottom: -100px;
+  padding: 10px;
+}
+// .fa {
+//   padding: 20px;
+//   font-size: 30px;
+//   width: 50px;
+//   text-align: center;
+//   text-decoration: none;
+//   margin: 5px 2px;
+// }
+//
+// .fa:hover {
+//     opacity: 0.7;
+// }
+//
+// .fa-facebook {
+//   background: #3B5998;
+//   color: white;
+// }
 
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  // margin: 5px 2px;
-}
+/* ======================================== home page ========================== */
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  margin-left: -1100px;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-/* === home page === */
 #slideshow {
   margin: 50px auto;
   position: relative;
   width: 100px;
   height: 100px;
   padding: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  background-color: white;
 }
 #slideshow > div {
   position: absolute;
   top: -40px;
-  left: -240px;
-  // right: 10px;
+  left: 40px;
   bottom: 10px;
 }
 #homeMenu, #homeSlideshow {
-  width: 50%;
+  width: 30%;
 }
 .slideimgs {
   height: 600px;
-  width: 1300px;
+  width: 1000px;
 }
 #whatwedo {
   margin-left: 80px;
@@ -124,37 +126,237 @@ footer {
   font-size: 20px;
   color: #A03539;
 }
-/* === about page === */
-.salomeimg {
-  width: 300px;
-  height: 400px;
+
+/* ======================================= about page ========================== */
+#salntxt {
+  margin-left: 150px;
+  margin-right: 100px;
+  margin-top: 50px;
+  padding: 5px;
+  font-family: 'Abril Fatface', cursive;
+
 }
-/* === portfolio page === */
-.linkimgs, .comimgs {
-  width: 400px;
+.salimg {
+  width: 300px;
+  height: 600px;
+  float: left;
+}
+.teamimg {
+  width: 700px;
+  height: 500px;
+  margin-left: 10px;
+}
+.abtsaltxt, .abtBARtxt {
+  margin-right: 30px;
+  background-color: white;
+  color: #4C5C35;
+  font-size: 18px;
+  padding: 5px;
+}
+
+
+// svg.intro {
+//   max-width: 400px;
+//   margin-top: 200px;
+//   margin-left: 450px;
+//   transform: translate(-50%, -50%);
+//
+//   .text {
+//     display: none;
+//   }
+//   &.go {
+//     .text {
+//       font-family: Arial, sans-serif;
+//       font-size: 70px;
+//       text-transform: uppercase;
+//       display: block;
+//     }
+//     .text-stroke {
+//       fill: none;
+//       stroke: #51256f;
+//       stroke-width: 2.8px;
+//       stroke-dashoffset: -900;
+//       stroke-dasharray: 900;
+//       stroke-linecap: butt;
+//       stroke-linejoin: round;
+//       animation: dash 2.5s ease-in-out forwards;
+//     }
+//     .text-stroke:nth-child(2) {
+//       animation-delay: .3s;
+//     }
+//     .text-stroke:nth-child(3) {
+//       animation-delay: .9s;
+//     }
+//     .text-stroke-2 {
+//       stroke: #f6bdfa;
+//       animation-delay: 1.2s;
+//     }
+//   }
+// }
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.reload {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none!important;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 6px 7px #350e4c;
+  transition: all .1s cubic-bezier(.67, .13, .1, .81);
+  &:hover {
+    box-shadow: 0 4px 4px #350e4c;
+    transform: translateY(1px);
+  }
+  &:active {
+    box-shadow: 0 1px 2px #244B94;
+    transform: translateY(2px);
+  }
+  svg {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+/* ====================================== portfolio  =========================== */
+
+.folders {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Abril Fatface', cursive;
+
+}
+.folders > a {
+  color: #4C5C35;
+}
+.linkimgs {
+  width: 500px;
   height: 300px;
   text-align: center;
+}
+.port {
+  margin-left: 550px;
+  margin-right: 150px;
+  margin-top: 150px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  position: relative;
+  width: 50%;
+  // box-shadow: 10px 10px 5px #F7CE2E;
+  // text-align: center;
 
 }
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 180px;
-    display: inline-block;
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+.overlay {
+  position: absolute;
+  margin-top: 50px;
+  bottom: 0;
+  margin-left: -200px;
+  // right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
 }
 
-div.gallery image_tag {
-    width: 100%;
-    height: auto;
+.port:hover .overlay {
+  opacity: 1;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-/* === vip page === */
+/* ========================================= services ========================== */
+
+#serv_wrapper {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  align-items: center;
+  align-content: space-around;
+}
+.leftcolumn, .rightcolumn {
+  margin-left: 10px;
+  height: 800px;
+  width: 800px;
+  display: inline-block;
+  background-color: white;
+  color: #4C5C35;
+  font-size: 18px;
+  font-family: 'Abril Fatface', cursive;
+  padding: 10px;
+}
+.leftcolumn {
+  margin-top: -5px;
+}
+#location {
+  margin-left: 170px;
+  margin-right: 150px;
+  margin-top: 70px;
+  height: 350px;
+  background-color: white;
+  color: black;
+  display: flex;
+  padding: 10px;
+}
+#contact {
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #4C5C35;
+  padding: 10px;
+  font-family: 'Abril Fatface', cursive;
+}
+iframe {
+  margin-top: 20px;
+  margin-left: 140px;
+  padding: 10px;
+}
+
+/* =========================================== events === ======================*/
+
+.carousel {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  align-content: space-around;
+  // box-shadow: 10px 10px 5px #F7CE2E;
+}
+#eventtxt {
+  font-size: 18px;
+  background-color: white;
+  height: 100px;
+  color: #4C5C35;
+  font-family: 'Abril Fatface', cursive;
+}
