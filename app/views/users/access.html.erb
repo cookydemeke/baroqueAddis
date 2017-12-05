@@ -1,91 +1,96 @@
+<ul>
+  <li><%= link_to "Events", events_portfolio_path %></li>
+</ul>
+
+
 <div class="container">
   <h1>Access Real Estate</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    </ol> -->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
       <div class="item active">
         <%= image_tag("entrance.jpg", :alt => "VIP", :style => "width:500px") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Main Entrance</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("Reception.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Reception Desk</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("lobby.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>lobby</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("hallway.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Hallway</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("office.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Office</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("recep.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Reception</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("office_2.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Office</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("emp_lounge.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Employee Lounge</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("emp_lounge_2.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Employee Lounge</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("SALON_2.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>President Salon</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="item">
         <%= image_tag("lobby_2.jpg", :alt => "VIP") %>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption"> -->
           <h3>Lobby</h3>
-        </div>
+        <!-- </div> -->
       </div>
 
 </div>
@@ -100,4 +105,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
+<div class="files">
+  <p class="file"><%= link_to "○ Ethiopian Airlines VIP Terminal", vip_path %></p>
+
+  <p class="file"><%= link_to "○ Capital Hotel", capital_path %></p>
+
+  <p class="file"><%= link_to "○ Access Real Estate", access_path %></p>
+
+  <p class="file"><%= link_to "○ Nexus International Hotel", nexus_path %></p>
+
+  <p class="file"><%= link_to "○ Residential Home", residential_path %></p>
 </div>

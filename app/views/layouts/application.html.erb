@@ -25,23 +25,22 @@
   </head>
   </head>
 
-  <body style="background-color:#FBFAF4">
+  <body>
     <header>
-      <!-- <div id="logo">Baroque</div> -->
-      <%= image_tag("Logo.png", :alt => "Logo", :class => "logo") %>
+      <%= link_to image_tag("Logo.png", :alt => "Logo", :class => "logo"), home_path %>
 
-      <hr>
+    <!-- <div id="icons"> -->
+   <!-- </div> -->
+    <div id="nav">
+      <ul>
+        <li><%= link_to "Home", home_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Portfolio", port_path %></li>
+        <li><%= link_to "Services", services_path %></li>
+        <li><%= link_to "Connect", connect_path %></li>
 
-      <div id="nav">
-        <ul>
-          <li><%= link_to "Home", home_path %></li>
-          <li><%= link_to "Interiors", portfolio_path %></li>
-          <li><%= link_to "Events", events_portfolio_path %></li>
-          <li><%= link_to "Services", services_path %></li>
-          <li><%= link_to "About", about_path %></li>
-        </ul>
-      </div>
-
+      </ul>
+    </div>
 
     </header>
 
@@ -52,9 +51,7 @@
     <footer>
       <hr>
       <p>&copy; 2013 - 2017. Baroqueinethiopia.com. All Rights Reserved. </p>
-      <a href="https://www.facebook.com/baroque.inethiopia?fref=ts" class="fa fa-facebook"></a>
-      <!-- <a href="https://www.linkedin.com/in/salome-dagnachew-a1172235/" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a> -->
+
     </footer>
   </body>
 </html>

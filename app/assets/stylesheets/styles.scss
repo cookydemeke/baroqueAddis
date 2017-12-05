@@ -1,43 +1,50 @@
-body {
-  width: 100%;
-  height: 100%;
-}
+/* ======= landscape phone to portrait tablet ======= */
+@media all and (min-width: 320px) and (max-width: 467px) {
+  // body {
+  //   background-position: center;
+  //   background-image: url('addis.jpg');
+  //   position: fixed;
+  // }
+  }
+  /* ======= landscape phone ======= */
+  @media all and (max-width: 319px) {
+    /*body {
+      background-image: url('addis.jpg');
+      min-width: 300px;
+    }*/
+  }
 h1{
   color: #A03539;
   text-align: center;
   margin-top: 200px;
+  font-family: 'Abril Fatface', cursive;
+
 }
-h2, h3 {
+h2, h3, h4 {
   color: #4C5C35;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+
 }
-hr {
-  border-color: #A03539;
-  margin-left: 200px;
-  margin-right: 200px;
+p {
+  padding: 10px;
 }
 /*==================================== navigation bar/footer =================== */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  // background-color: #EABC46;
-  margin-left: 700px;
-  margin-right: 150px;
-  color: white;
-}
+nav ul {
+    list-style: none;
+    width: 100%;
+    border: 1px solid red;
+    text-align: right;
+ }
 li {
   font-size: 20px;
   font-family: 'Abril Fatface', cursive;
   display: inline-block;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 li > a {
-  color: #4C5C35;
+  color: #BAB9B9;
 }
 li :hover {
   width: 100px;
@@ -50,50 +57,42 @@ li :hover {
   background-color: #A03539;
 }
 .logo {
-  margin-left: 200px;
+  // margin-bottom: 10px;
+  // margin-left: 10px;
   width: 500px;
 }
+.brq {
+  width: 900px;
+  height: 200px;
+
+}
 .wrapper {
-  margin-left: 50px;
-  margin-right: 100px;
-  display: flex;
-  margin-top: 2px;
+  // margin-left: 50px;
+  // margin-right: 100px;
+  // display: flex;
+  // margin-top: 2px;
   align-items: center;
   align-content: space-around;
   padding: 5px;
 }
+// #icons {
+//   float: right;
+//   padding: 100px;
+//   font-size: 20px;
+// }
 footer {
   list-style-type: none;
   padding: 0;
-  overflow: hidden;
+  // overflow: hidden;
   text-align: center;
-  // background-color: #EABC46;
-  margin-left: 150px;
-  margin-right: 200px;
+  // margin-left: 150px;
+  // margin-right: 200px;
   color: #4C5C35;
-  width: 80%;
+  width: 100%;
   clear: both;
-  position: absolute;
-  bottom: -100px;
+  // bottom: -20%;
   padding: 10px;
 }
-// .fa {
-//   padding: 20px;
-//   font-size: 30px;
-//   width: 50px;
-//   text-align: center;
-//   text-decoration: none;
-//   margin: 5px 2px;
-// }
-//
-// .fa:hover {
-//     opacity: 0.7;
-// }
-//
-// .fa-facebook {
-//   background: #3B5998;
-//   color: white;
-// }
 
 /* ======================================== home page ========================== */
 
@@ -102,7 +101,7 @@ footer {
   position: relative;
   width: 100px;
   height: 100px;
-  padding: 10px;
+  padding: 20px;
 }
 #slideshow > div {
   position: absolute;
@@ -110,187 +109,168 @@ footer {
   left: 40px;
   bottom: 10px;
 }
-#homeMenu, #homeSlideshow {
+#homeSlideshow {
   width: 30%;
 }
 .slideimgs {
   height: 600px;
   width: 1000px;
 }
-#whatwedo {
-  margin-left: 80px;
-}
+
 .qod-author {
   text-align: center;
   font-family: 'Satisfy', cursive;
   font-size: 20px;
   color: #A03539;
 }
-
 /* ======================================= about page ========================== */
-#salntxt {
-  margin-left: 150px;
-  margin-right: 100px;
-  margin-top: 50px;
-  padding: 5px;
-  font-family: 'Abril Fatface', cursive;
 
-}
 .salimg {
   width: 300px;
   height: 600px;
-  float: left;
+  margin-left: 100px;
 }
 .teamimg {
-  width: 700px;
-  height: 500px;
-  margin-left: 10px;
-}
-.abtsaltxt, .abtBARtxt {
-  margin-right: 30px;
-  background-color: white;
-  color: #4C5C35;
-  font-size: 18px;
-  padding: 5px;
-}
-
-
-// svg.intro {
-//   max-width: 400px;
-//   margin-top: 200px;
-//   margin-left: 450px;
-//   transform: translate(-50%, -50%);
-//
-//   .text {
-//     display: none;
-//   }
-//   &.go {
-//     .text {
-//       font-family: Arial, sans-serif;
-//       font-size: 70px;
-//       text-transform: uppercase;
-//       display: block;
-//     }
-//     .text-stroke {
-//       fill: none;
-//       stroke: #51256f;
-//       stroke-width: 2.8px;
-//       stroke-dashoffset: -900;
-//       stroke-dasharray: 900;
-//       stroke-linecap: butt;
-//       stroke-linejoin: round;
-//       animation: dash 2.5s ease-in-out forwards;
-//     }
-//     .text-stroke:nth-child(2) {
-//       animation-delay: .3s;
-//     }
-//     .text-stroke:nth-child(3) {
-//       animation-delay: .9s;
-//     }
-//     .text-stroke-2 {
-//       stroke: #f6bdfa;
-//       animation-delay: 1.2s;
-//     }
-//   }
-// }
-
-@keyframes dash {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.reload {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  background: #fff;
-  border: none;
-  border-radius: 20px;
-  outline: none!important;
-  font-size: 11px;
-  line-height: 1.5;
-  padding: 8px 12px;
-  text-transform: uppercase;
-  z-index: 10;
-  cursor: pointer;
-  box-shadow: 0 6px 7px #350e4c;
-  transition: all .1s cubic-bezier(.67, .13, .1, .81);
-  &:hover {
-    box-shadow: 0 4px 4px #350e4c;
-    transform: translateY(1px);
-  }
-  &:active {
-    box-shadow: 0 1px 2px #244B94;
-    transform: translateY(2px);
-  }
-  svg {
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-  }
-}
-/* ====================================== portfolio  =========================== */
-
-.folders {
-  font-size: 22px;
-  text-align: center;
-  margin-top: 10px;
-  font-family: 'Abril Fatface', cursive;
-
-}
-.folders > a {
-  color: #4C5C35;
-}
-.linkimgs {
   width: 500px;
-  height: 300px;
-  text-align: center;
+  height: 400px;
+  padding: 20px;
 }
-.port {
-  margin-left: 550px;
-  margin-right: 150px;
-  margin-top: 150px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+.title {
+  color: grey;
+}
+
+/* ====================================== port  =========================== */
+.port_files {
+  margin-left: 600px;
+  margin-top: 100px;
+}
+
+.port_file > a{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  color: #BAB9B9;
+}
+.port_file :hover {
+  width: 100px;
+  border-radius: 50%;
+  color: #A03539;
+}
+
+/* ====================================== portfolio  =========================== */
+.container1 {
+  margin-left: 200px;
   position: relative;
-  width: 50%;
-  // box-shadow: 10px 10px 5px #F7CE2E;
-  // text-align: center;
+  width: 70%;
+  margin-top: 50px;
 
 }
+.container {
+    position: relative;
+    width: 70%;
+    margin-top: 50px;
+    float: left;
+}
+
 .image {
+  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-}
-
-.overlay {
-  position: absolute;
-  margin-top: 50px;
-  bottom: 0;
-  margin-left: -200px;
-  // right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
   transition: .5s ease;
+  backface-visibility: hidden;
+  // border-radius: 50%;
 }
 
-.port:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text > a {
+  background-color: #731A1C;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Abril Fatface', cursive;
+}
+.files {
+  display: inline-block;
+  // margin-right: 150px;
+  // margin-top: 50px;
+  // padding: 50px;
+  float: right;
+}
+.file > a{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 18px;
+  color: #BAB9B9;
+
+}
+.file :hover {
+  width: 100px;
+  border-radius: 50%;
+  color: #A03539;
+}
+/* =========================================== events === ======================*/
+
+.carousel {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
+  padding: 10px;
+  align-content: space-around;
+}
+#eventtxt {
+  font-size: 18px;
+  background-color: white;
+  height: 100px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+    // float: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+.cardE {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 150px;
 }
 
 /* ========================================= services ========================== */
@@ -310,9 +290,6 @@ footer {
   width: 800px;
   display: inline-block;
   background-color: white;
-  color: #4C5C35;
-  font-size: 18px;
-  font-family: 'Abril Fatface', cursive;
   padding: 10px;
 }
 .leftcolumn {
@@ -331,7 +308,7 @@ footer {
 #contact {
   margin-top: 20px;
   margin-left: 50px;
-  color: #4C5C35;
+  color: #731A1C;
   padding: 10px;
   font-family: 'Abril Fatface', cursive;
 }
@@ -339,24 +316,4 @@ iframe {
   margin-top: 20px;
   margin-left: 140px;
   padding: 10px;
-}
-
-/* =========================================== events === ======================*/
-
-.carousel {
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 50px;
-  display: flex;
-  margin-top: 50px;
-  padding: 10px;
-  align-content: space-around;
-  // box-shadow: 10px 10px 5px #F7CE2E;
-}
-#eventtxt {
-  font-size: 18px;
-  background-color: white;
-  height: 100px;
-  color: #4C5C35;
-  font-family: 'Abril Fatface', cursive;
 }

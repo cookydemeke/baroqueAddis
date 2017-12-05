@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   get "/residential" => "users#residential"
   get "/capital" => "users#capital"
   get "/nexus" => "users#nexus"
+  get "/port" => "users#port"
+  get "/connect" => "users#connect"
 
 end
