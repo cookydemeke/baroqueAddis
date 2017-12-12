@@ -16,7 +16,7 @@
 h1{
   color: #A03539;
   text-align: center;
-  margin-top: 200px;
+  // margin-top: 200px;
   font-family: 'Abril Fatface', cursive;
 
 }
@@ -67,19 +67,10 @@ li :hover {
 
 }
 .wrapper {
-  // margin-left: 50px;
-  // margin-right: 100px;
-  // display: flex;
-  // margin-top: 2px;
   align-items: center;
   align-content: space-around;
   padding: 5px;
 }
-// #icons {
-//   float: right;
-//   padding: 100px;
-//   font-size: 20px;
-// }
 footer {
   list-style-type: none;
   // overflow: hidden;
@@ -89,27 +80,20 @@ footer {
   color: #4C5C35;
   width: 100%;
   clear: both;
-  top: -40%;
+  margin-top: 10%;
   padding: 10px;
 }
 
 /* ======================================== home page ========================== */
 
-#slideshow {
-  margin: 50px auto;
+.slideshow {
+  margin: 0 auto;
   position: relative;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+  width: 1000px;
+  height: 650px;
 }
-#slideshow > div {
+.slideshow div {
   position: absolute;
-  top: -40px;
-  left: 40px;
-  bottom: 10px;
-}
-#homeSlideshow {
-  width: 30%;
 }
 .slideimgs {
   height: 600px;
@@ -121,30 +105,34 @@ footer {
   font-family: 'Satisfy', cursive;
   font-size: 20px;
   color: #A03539;
+  margin: 0;
+  width: 100%;
 }
 /* ======================================= about page ========================== */
-
+#abtcont {
+  padding: 10px;
+}
 .salimg {
   width: 300px;
   height: 600px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 .teamimg {
   width: 500px;
   height: 400px;
   padding: 20px;
+  margin-left: 70px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 500px;
 }
 .title {
   color: grey;
+  text-align: center;
 }
 
 /* ====================================== port  =========================== */
-.port_files {
-  margin-left: 600px;
+#portlinks {
   margin-top: 100px;
 }
 
@@ -157,6 +145,12 @@ footer {
   width: 100px;
   border-radius: 50%;
   color: #A03539;
+}
+#phoI, #fiI {
+  font-size: 40px;
+}
+.portTitles {
+  margin-bottom: 50px;
 }
 /* ====================================== portfolio  =========================== */
 .container1 {
@@ -180,7 +174,6 @@ footer {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  // border-radius: 50%;
 }
 
 .middle {
@@ -208,12 +201,11 @@ footer {
   padding: 16px 32px;
   font-family: 'Abril Fatface', cursive;
 }
-.files {
-  display: inline-block;
-  // margin-right: 150px;
-  // margin-top: 50px;
-  // padding: 50px;
-  float: right;
+
+.file :hover {
+  width: 100px;
+  border-radius: 50%;
+  color: #A03539;
 }
 .file > a{
   font-family: 'Abril Fatface', cursive;
@@ -221,35 +213,30 @@ footer {
   color: #BAB9B9;
 
 }
-.file :hover {
-  width: 100px;
-  border-radius: 50%;
-  color: #A03539;
+.portshow {
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+.portshow div {
+  position: absolute;
+}
+.portimgs {
+  height: 300px;
+  width: 500px;
 }
 /* =========================================== events =========================*/
 
-.carousel {
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 50px;
-  display: flex;
-  margin-top: 50px;
-  padding: 10px;
-  align-content: space-around;
-}
 #eventtxt {
   font-size: 18px;
   background-color: white;
   height: 100px;
 }
-
-
 div.gallery {
-    margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 400px;
-    margin-left: 30px;
+    margin-top: 20px;
 }
 
 div.gallery:hover {
@@ -257,37 +244,6 @@ div.gallery:hover {
 }
 
 div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-
-
-
-
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 150px;
-    // float: left;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.desc {
     padding: 15px;
     text-align: center;
 }
@@ -327,9 +283,11 @@ div.desc {
   color: black;
   display: flex;
   padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 #contact {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 50px;
   color: #731A1C;
   padding: 10px;
